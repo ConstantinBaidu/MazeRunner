@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".JoystickActivity">
+
+    <ImageView
+        android:id="@+id/btnLight"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/mazelogojoy" />
+
+    <ImageView
+        android:id="@+id/btnNorth"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/comandonord" />
+
+    <ImageView
+        android:id="@+id/btnSouth"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="162dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/comandosud" />
+
+    <ImageView
+        android:id="@+id/btnWest"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/comandoovest" />
+
+    <ImageView
+        android:id="@+id/btnEast"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWest"
+        app:srcCompat="@drawable/comandoest" />
+
+    <TextView
+        android:id="@+id/velocitatxt"
+        android:layout_width="60dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="200dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:rotation="90"
+        android:text="100"
+        android:textColor="#E34848"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/velocitatxt2"
+        android:layout_width="81dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="200dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:rotation="90"
+        android:text="Velocita"
+        android:textColor="#E34848"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnMinus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/minus" />
+
+    <ImageView
+        android:id="@+id/btnPlus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/plus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

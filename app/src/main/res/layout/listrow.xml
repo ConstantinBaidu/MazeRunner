@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+
+    android:paddingBottom="15dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/devicesicons" />
+
+    <TextView
+        android:id="@+id/txtName"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="Dispositivo"
+        android:textColor="#373737" />
+
+    <TextView
+        android:id="@+id/txtSub"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="IndirizzoMac"
+        android:textColor="#373737" />
+
+</RelativeLayout>
